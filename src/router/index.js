@@ -4,7 +4,22 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 // 配置自己的路由表
-const routes = []
+const routes = [
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('@/views/login')
+    // 这里是路由懒加载的写法
+    // 完整写法是：@views/login/index.vue，但是index.vue可以省略，导入一个目录时默认导入目录下的index.vue
+  }
+  // {
+  //   path: '/',
+  //   name: 'layout',
+  //   component: () => import('@/views/layout/index.vue')
+  //   // 这里是路由懒加载的写法
+  //   // 完整写法是：@views/login/index.vue，但是index.vue可以省略，导入一个目录时默认导入目录下的index.vue
+  // }
+]
 
 const router = new VueRouter({
   routes

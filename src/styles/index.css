@@ -1,5 +1,11 @@
 body {
-  background-color: yellowgreen;
+  background-color: #f5f7f9;
+}
+.page-nav-bar {
+  background-color: #3296fa;
+}
+.page-nav-bar .van-nav-bar__title {
+  color: #fff;
 }
 @font-face {
   font-family: "iconfont";
