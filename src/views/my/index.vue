@@ -8,7 +8,7 @@
 		image: 增强版的 img 标签，提供多种图片填充模式，支持图片懒加载、加载中提示、加载失败提示
 		round: 设置图片变圆
 		fit="cover" ： fit填充模式：	cover保持宽高缩放图片，使图片的短边能完全显示出来，裁剪长边
-		  -->
+          -->
           <van-image
             class="avatar"
             :src="userInfo.photo"
@@ -57,7 +57,6 @@
         </div>
       </div>
     </div>
-
      <!-- 宫格导航
 	column-num: 2 ，列数为2列，代表一行两列
 	clickable: 是否开启格子点击反馈(点击格子之后，会出现灰色效果)
